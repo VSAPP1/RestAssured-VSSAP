@@ -1,1 +1,3 @@
-## Test automation framework to automate all the available apis using rest assured.
+<img src="icon.png" align="center" />
+
+## Automation framework to automate apis using rest assured.
