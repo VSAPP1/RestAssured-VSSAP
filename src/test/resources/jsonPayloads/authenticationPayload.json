@@ -1,0 +1,6 @@
+{
+  "DTYPE": "AuthenticationCommand",
+  "actionUid": "string",
+  "pwd": "12345q",
+  "userName": "customerservices@uitvoerder.nl"
+}
