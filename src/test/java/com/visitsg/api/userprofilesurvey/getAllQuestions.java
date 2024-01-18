@@ -1,18 +1,20 @@
 package com.visitsg.api.userprofilesurvey;
 
 import com.visitsg.api.utilities.globalConstants;
+import com.visitsg.api.utilities.httpStatus;
 import com.visitsg.api.utilities.httpStatus.*;
+import io.restassured.path.json.JsonPath;
 import org.junit.Test;
-
-import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.notNullValue;
 
 
 import java.io.IOException;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.*;
 
 public class getAllQuestions {
+    private String qsnId;
+    private String optionId;
 
     /**
      * testing GET call
@@ -20,13 +22,21 @@ public class getAllQuestions {
 
     @Test
     public void testGetAllQuestions() throws IOException {
-        given().
+        JsonPath jasonPath = given().
                 baseUri(globalConstants.getGlobalVariables("SURVEY-URL-STG")).
                 header("x-api-key", globalConstants.getGlobalVariables("SURVEY-XAPI-KEY")).
                 when().
                 get("/web/survey_questions")
-                .then().statusCode(HttpStatusCodes.OK.getCode()).body("data.results", notNullValue()).log().all();
+                .then().statusCode(HttpStatusCodes.OK.getCode()).body("data.results", notNullValue(),
+                        "data.results[0].text", equalTo("Where are you from?"),
+                        "data.results[3].text", equalTo("Which age group do you belong to?"),
+                        "data.results[4].text", equalTo("How often do you travel?"),
+                        "data.results[5].text", equalTo("What are your interests?"),
+                        "data.results[6].text", equalTo("Who do you usually travel with?"),
+                        "data.results[7].text", equalTo("What is your usual purpose of visit?")).extract().jsonPath();
 
+        this.qsnId = jasonPath.get("data.results[3].uid");
+        this.optionId = jasonPath.get("data.results[3].surveyOptions[2].uid");
     }
 
     /**testing POST call**/
