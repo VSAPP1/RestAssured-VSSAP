@@ -1,7 +1,7 @@
 package com.visitsg.api.utilities;
 
 import com.github.javafaker.Faker;
-import com.visitsg.api.authentication.authenticationCommand;
+//import com.visitsg.api.authentication.authenticationCommand;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -12,14 +12,14 @@ public class globalConstants {
 
     private static String configsPath = "src/test/resources/configs/configuration.properties";
 
-    public static Map getGlobalHeaders() {
-        return Map.of("Accept", "application/json", "content-type", "application/json");
-    }
+//    public static Map getGlobalHeaders() {
+//        return Map.of("Accept", "application/json", "content-type", "application/json");
+//    }
 
-    public static Map getSessionHeaders() throws IOException {
-        return Map.of("UserSecurityToken", authenticationCommand.getAuthToken());
-    }
-
+//    public static Map getSessionHeaders() throws IOException {
+//        return Map.of("UserSecurityToken", authenticationCommand.getAuthToken());
+//    }
+//
     public static String getGlobalVariables(String key) throws java.io.IOException {
         Properties properties = new Properties();
         FileInputStream fileInputStream = new FileInputStream(configsPath);

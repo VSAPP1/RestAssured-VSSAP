@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.visitsg.api.userprofilesurvey.getAllQuestions" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-12T11:02:34" hostname="r-lankipa-fp94k" time="4.869">
+  <properties/>
+  <testcase name="testGetAllQuestions" classname="com.visitsg.api.userprofilesurvey.getAllQuestions" time="4.869"/>
+  <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Fri, 12 Jan 2024 11:02:37 GMT
+Content-Type: application/json
+Content-Length: 9616
+Connection: keep-alive
+x-amzn-RequestId: 95f4a9ca-4153-49c0-bc26-f7f5a7b34c95
+Access-Control-Allow-Origin: *
+x-amz-apigw-id: RbFb8FQAyQ0EDRw=
+X-Amzn-Trace-Id: Root=1-65a11c4c-14ab67ab34058efc48dabbe8;Sampled=0;lineage=c2ed606a:0
+
+{
+    "data": {
+        "results": [
+            {
+                "updatedAt": "2023-12-20T02:19:46.000Z",
+                "createdAt": "2023-12-20T02:19:46.000Z",
+                "maxAnswers": 1,
+                "freeText": true,
+                "primaryImage": "https://assets-stg.vsapp.tc.stb.gov.sg/b5da6eb0-27ca-44e7-b395-9d70bb5dc35b-1703038786394.jpeg",
+                "text": "Where are you from?",
+                "uid": "survey_question_226f4263-cd5e-456d-b88f-53f1a7cc55c3",
+                "position": 1,
+                "subText": "Placeholder",
+                "type": "origin",
+                "surveyOptions": [
+                    
+                ]
+            },
+            {
+                "updatedAt": "2023-12-20T02:20:43.000Z",
+                "createdAt": "2023-12-20T02:20:43.000Z",
+                "maxAnswers": 1,
+                "freeText": true,
+                "primaryImage": "https://assets-stg.vsapp.tc.stb.gov.sg/0a6be6ad-961b-431c-bb95-8fd29e9142ec-1703038843447.jpeg",
+                "text": "Where are you from?",
+                "uid": "survey_question_8f1ce9f2-4e67-4f4b-8a95-431d26ec437f",
+                "position": 1,
+                "subText": "Placeholder",
+                "type": "origin",
+                "surveyOptions": [
+                    
+                ]
+            },
+            {
+                "updatedAt": "2022-12-01T14:20:02.000Z",
+                "createdAt": "2022-12-01T14:20:02.000Z",
+                "maxAnswers": 0,
+                "freeText": false,
+                "primaryImage": "https://assets-stg.vsapp.tc.stb.gov.sg/580b3620-27b1-4b22-9ced-05fabda43d12-1669904402460.jpg",
+                "text": "Where are you from?",
+                "uid": "survey_question_7a3974f3-a8c4-40d5-95ec-77d275ad1b0e",
+                "position": 1,
+                "type": "origin",
+                "surveyOptions": [
+                    
+                ]
+            },
+            {
+                "updatedAt": "2022-12-01T14:24:55.000Z",
+                "createdAt": "2022-12-01T14:24:55.000Z",
+                "maxAnswers": 1,
+                "freeText": false,
+                "primaryImage": "https://assets-stg.vsapp.tc.stb.gov.sg/a02a5922-89a5-4a43-9bfa-3fd864f13bf7-1669904694942.jpg",
+                "text": "Which age group do you belong to?",
+                "uid": "survey_question_8ca8a5ad-c41a-41f5-9000-a1a9d8986f78",
+                "position": 2,
+                "type": "age",
+                "surveyOptions": [
+                    {
+                        "updatedAt": "2022-12-01T14:24:55.000Z",
+                        "surveyQuestionId": "survey_question_8ca8a5ad-c41a-41f5-9000-a1a9d8986f78",
+                        "createdAt": "2022-12-01T14:24:55.000Z",
+                        "text": "Below 15",
+                        "uid": "survey_option_3d64c1f0-5f94-4eea-a514-f98ba50c1677",
+                        "position": 1
+                    },
+                    {
+                        "updatedAt": "2022-12-01T14:24:55.000Z",
+                        "surveyQuestionId": "survey_question_8ca8a5ad-c41a-41f5-9000-a1a9d8986f78",
+                        "createdAt": "2022-12-01T14:24:55.000Z",
+                        "text": "15 – 24",
+                        "uid": "survey_option_bf53e28a-8256-4cf7-b756-0438da62aa24",
+                        "position": 2
+                    },
+                    {
+                        "updatedAt": "2022-12-01T14:24:55.000Z",
+                        "surveyQuestionId": "survey_question_8ca8a5ad-c41a-41f5-9000-a1a9d8986f78",
+                        "createdAt": "2022-12-01T14:24:55.000Z",
+                        "text": "25 – 34",
+                        "uid": "survey_option_562aa5da-aa9c-4252-b872-30208ae0f0d0",
+                        "position": 3
+                    },
+                    {
+                        "updatedAt": "2022-12-01T14:24:55.000Z",
+                        "surveyQuestionId": "survey_question_8ca8a5ad-c41a-41f5-9000-a1a9d8986f78",
+                        "createdAt": "2022-12-01T14:24:55.000Z",
+                        "text": "35 – 44",
+                        "uid": "survey_option_85570209-f47e-42ca-a20b-132f3f7e3acf",
+                        "position": 4
+                    },
+                    {
+                        "updatedAt": "2022-12-01T14:24:55.000Z",
+                        "surveyQuestionId": "survey_question_8ca8a5ad-c41a-41f5-9000-a1a9d8986f78",
+                        "createdAt": "2022-12-01T14:24:55.000Z",
+                        "text": "45 – 54",
+                        "uid": "survey_option_35b4f041-ba9b-4ccf-b162-d524183ba5d5",
+                        "position": 5
+                    },
+                    {
+                        "updatedAt": "2022-12-01T14:24:55.000Z",
+                        "surveyQuestionId": "survey_question_8ca8a5ad-c41a-41f5-9000-a1a9d8986f78",
+                        "createdAt": "2022-12-01T14:24:55.000Z",
+                        "text": "55 – 64",
+                        "uid": "survey_option_b28300b0-19d9-4c9a-9fad-032f8c10be47",
+                        "position": 6
+                    },
+                    {
+                        "updatedAt": "2022-12-01T14:24:55.000Z",
+                        "surveyQuestionId": "survey_question_8ca8a5ad-c41a-41f5-9000-a1a9d8986f78",
+                        "createdAt": "2022-12-01T14:24:55.000Z",
+                        "text": "65 and above",
+                        "uid": "survey_option_2ec437c0-bce9-47ad-8bc6-ef382bcc5659",
+                        "position": 7
+                    }
+                ]
+            },
+            {
+                "updatedAt": "2023-10-25T04:17:26.000Z",
+                "createdAt": "2023-10-25T04:17:26.000Z",
+                "maxAnswers": 1,
+                "freeText": false,
+                "text": "How often do you travel?",
+                "uid": "survey_question_e7509cd2-2903-4641-8db6-43b7d6818689",
+                "position": 2,
+                "type": "travel",
+                "surveyOptions": [
+                    
+                ]
+            },
+            {
+                "updatedAt": "2022-12-01T14:48:12.000Z",
+                "createdAt": "2022-12-01T14:48:12.000Z",
+                "freeText": false,
+                "maxAnswers": 10,
+                "primaryImage": "https://assets-stg.vsapp.tc.stb.gov.sg/2bb30df5-0788-48e7-b762-9c56c4863b74-1669906092315.jpg",
+                "text": "What are your interests?",
+                "uid": "survey_question_1b5df956-3f03-4d32-aa79-0af3aa1dcc7e",
+                "position": 3,
+                "subText": "(You can pick more than 1)",
+                "type": "interest",
+                "surveyOptions": [
+                    {
+                        "updatedAt": "2022-12-01T14:48:12.000Z",
+                        "surveyQuestionId": "survey_question_1b5df956-3f03-4d32-aa79-0af3aa1dcc7e",
+                        "createdAt": "2022-12-01T14:48:12.000Z",
+                        "text": "Attractions",
+                        "dsaPosition": 2,
+                        "uid": "survey_option_49d77578-a9ce-43ac-97f9-e5be935e6940",
+                        "position": 1
+                    },
+                    {
+                        "updatedAt": "2022-12-01T14:48:12.000Z",
+                        "surveyQuestionId": "survey_question_1b5df956-3f03-4d32-aa79-0af3aa1dcc7e",
+                        "createdAt": "2022-12-01T14:48:12.000Z",
+                        "text": "History & Culture",
+                        "dsaPosition": 4,
+                        "uid": "survey_option_c356a57d-112a-4ea4-a1fa-2b8b667da0b1",
+                        "position": 2
+                    },
+                    {
+                        "updatedAt": "2022-12-01T14:48:12.000Z",
+                        "surveyQuestionId": "survey_question_1b5df956-3f03-4d32-aa79-0af3aa1dcc7e",
+                        "createdAt": "2022-12-01T14:48:12.000Z",
+                        "text": "Arts",
+                        "dsaPosition": 1,
+                        "uid": "survey_option_b1c13934-3a2f-4744-a479-693b91798bc7",
+                        "position": 3
+                    },
+                    {
+                        "updatedAt": "2022-12-01T14:48:12.000Z",
+                        "surveyQuestionId": "survey_question_1b5df956-3f03-4d32-aa79-0af3aa1dcc7e",
+                        "createdAt": "2022-12-01T14:48:12.000Z",
+                        "text": "Nature & Outdoors",
+                        "dsaPosition": 6,
+                        "uid": "survey_option_4a423b50-7b4c-4f59-bf08-47b0aec7dc4f",
+                        "position": 4
+                    },
+                    {
+                        "updatedAt": "2022-12-01T14:48:12.000Z",
+                        "surveyQuestionId": "survey_question_1b5df956-3f03-4d32-aa79-0af3aa1dcc7e",
+                        "createdAt": "2022-12-01T14:48:12.000Z",
+                        "text": "Leisure & Entertainment",
+                        "dsaPosition": 5,
+                        "uid": "survey_option_42fb9d62-e857-4150-9a11-5dd969eb448a",
+                        "position": 5
+                    },
+                    {
+                        "updatedAt": "2022-12-01T14:48:12.000Z",
+                        "surveyQuestionId": "survey_question_1b5df956-3f03-4d32-aa79-0af3aa1dcc7e",
+                        "createdAt": "2022-12-01T14:48:12.000Z",
+                        "text": "Food & Beverages",
+                        "dsaPosition": 3,
+                        "uid": "survey_option_ff253995-4909-46a8-8a2c-3c927f081243",
+                        "position": 6
+                    },
+                    {
+                        "updatedAt": "2022-12-01T14:48:12.000Z",
+                        "surveyQuestionId": "survey_question_1b5df956-3f03-4d32-aa79-0af3aa1dcc7e",
+                        "createdAt": "2022-12-01T14:48:12.000Z",
+                        "text": "Shopping",
+                        "dsaPosition": 7,
+                        "uid": "survey_option_b145d4c7-148c-42f2-b42f-717786394501",
+                        "position": 7
+                    },
+                    {
+                        "updatedAt": "2022-12-01T14:48:12.000Z",
+                        "surveyQuestionId": "survey_question_1b5df956-3f03-4d32-aa79-0af3aa1dcc7e",
+                        "createdAt": "2022-12-01T14:48:12.000Z",
+                        "text": "Tours & Experiences",
+                        "dsaPosition": 8,
+                        "uid": "survey_option_2af112fa-5d18-4eb7-84d1-b4f9c9d494b8",
+                        "position": 8
+                    }
+                ]
+            },
+            {
+                "updatedAt": "2022-12-01T14:52:23.000Z",
+                "createdAt": "2022-12-01T14:52:23.000Z",
+                "maxAnswers": 10,
+                "freeText": false,
+                "primaryImage": "https://assets-stg.vsapp.tc.stb.gov.sg/fabc4a55-5ba0-4a8d-a1c4-b97911b95ce7-1669906343421.jpg",
+                "text": "Who do you usually travel with?",
+                "uid": "survey_question_cba3dd2e-aef9-462d-9492-cc9d373ac980",
+                "position": 4,
+                "subText": "(You can pick more than 1)",
+                "type": "travel",
+                "surveyOptions": [
+                    {
+                        "updatedAt": "2022-12-01T14:52:23.000Z",
+                        "surveyQuestionId": "survey_question_cba3dd2e-aef9-462d-9492-cc9d373ac980",
+                        "createdAt": "2022-12-01T14:52:23.000Z",
+                        "text": "Solo",
+                        "uid": "survey_option_6037dbb1-9259-4d47-9835-1704c613fdee",
+                        "position": 1
+                    },
+                    {
+                        "updatedAt": "2022-12-01T14:52:23.000Z",
+                        "surveyQuestionId": "survey_question_cba3dd2e-aef9-462d-9492-cc9d373ac980",
+                        "createdAt": "2022-12-01T14:52:23.000Z",
+                        "text": "Partner",
+                        "uid": "survey_option_1ef83a93-dde5-4aa9-9df7-d48f236420b3",
+                        "position": 2
+                    },
+                    {
+                        "updatedAt": "2022-12-01T14:52:23.000Z",
+                        "surveyQuestionId": "survey_question_cba3dd2e-aef9-462d-9492-cc9d373ac980",
+                        "createdAt": "2022-12-01T14:52:23.000Z",
+                        "text": "Friend(s)",
+                        "uid": "survey_option_943f0158-13ca-430e-b43b-87ee4928e671",
+                        "position": 3
+                    },
+                    {
+                        "updatedAt": "2022-12-01T14:52:23.000Z",
+                        "surveyQuestionId": "survey_question_cba3dd2e-aef9-462d-9492-cc9d373ac980",
+                        "createdAt": "2022-12-01T14:52:23.000Z",
+                        "text": "Children",
+                        "uid": "survey_option_2caf46b8-5139-4814-8b14-7d4b10b20fa7",
+                        "position": 4
+                    },
+                    {
+                        "updatedAt": "2022-12-01T14:52:23.000Z",
+                        "surveyQuestionId": "survey_question_cba3dd2e-aef9-462d-9492-cc9d373ac980",
+                        "createdAt": "2022-12-01T14:52:23.000Z",
+                        "text": "Family",
+                        "uid": "survey_option_e5c78f5f-4790-411f-9ab0-0eafbf9a41d9",
+                        "position": 5
+                    },
+                    {
+                        "updatedAt": "2022-12-01T14:52:23.000Z",
+                        "surveyQuestionId": "survey_question_cba3dd2e-aef9-462d-9492-cc9d373ac980",
+                        "createdAt": "2022-12-01T14:52:23.000Z",
+                        "text": "Colleagues",
+                        "uid": "survey_option_1c1e4d2a-9201-4fa4-bb99-45e0e58d2323",
+                        "position": 6
+                    }
+                ]
+            },
+            {
+                "updatedAt": "2022-12-01T14:55:35.000Z",
+                "createdAt": "2022-12-01T14:55:35.000Z",
+                "maxAnswers": 10,
+                "freeText": false,
+                "primaryImage": "https://assets-stg.vsapp.tc.stb.gov.sg/d359272d-ec0a-40c4-9343-5a436957bc86-1669906535078.jpg",
+                "text": "What is your usual purpose of visit?",
+                "uid": "survey_question_3dea7219-cc20-4342-a82d-7480357a5c9c",
+                "position": 5,
+                "subText": "(You can pick more than 1)",
+                "type": "purpose",
+                "surveyOptions": [
+                    {
+                        "updatedAt": "2022-12-01T14:55:35.000Z",
+                        "surveyQuestionId": "survey_question_3dea7219-cc20-4342-a82d-7480357a5c9c",
+                        "createdAt": "2022-12-01T14:55:35.000Z",
+                        "text": "Leisure",
+                        "uid": "survey_option_dde78da2-286a-43ae-9ccd-6d2958de38e9",
+                        "position": 1
+                    },
+                    {
+                        "updatedAt": "2022-12-01T14:55:35.000Z",
+                        "surveyQuestionId": "survey_question_3dea7219-cc20-4342-a82d-7480357a5c9c",
+                        "createdAt": "2022-12-01T14:55:35.000Z",
+                        "text": "Business",
+                        "uid": "survey_option_c57f2032-ee80-4e1e-b2ea-dce699dbe582",
+                        "position": 2
+                    },
+                    {
+                        "updatedAt": "2022-12-01T14:55:35.000Z",
+                        "surveyQuestionId": "survey_question_3dea7219-cc20-4342-a82d-7480357a5c9c",
+                        "createdAt": "2022-12-01T14:55:35.000Z",
+                        "text": "Visiting friends and family",
+                        "uid": "survey_option_50f899e6-42e0-467a-bb8c-53742f260e5a",
+                        "position": 3
+                    },
+                    {
+                        "updatedAt": "2022-12-01T14:55:35.000Z",
+                        "surveyQuestionId": "survey_question_3dea7219-cc20-4342-a82d-7480357a5c9c",
+                        "createdAt": "2022-12-01T14:55:35.000Z",
+                        "text": "Healthcare",
+                        "uid": "survey_option_ae73d2c7-11fd-4410-822b-4193050a2ed7",
+                        "position": 4
+                    },
+                    {
+                        "updatedAt": "2022-12-01T14:55:35.000Z",
+                        "surveyQuestionId": "survey_question_3dea7219-cc20-4342-a82d-7480357a5c9c",
+                        "createdAt": "2022-12-01T14:55:35.000Z",
+                        "text": "Others",
+                        "uid": "survey_option_6aac205f-dc02-412e-8b3b-4fa1508c32ba",
+                        "position": 5
+                    }
+                ]
+            }
+        ]
+    },
+    "status": {
+        "code": 200,
+        "errorDetail": "",
+        "message": "OK"
+    }
+}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
