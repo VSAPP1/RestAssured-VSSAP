@@ -13,8 +13,8 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
 public class getAllQuestions {
-    private String qsnId;
-    private String optionId;
+    private static String qsnId;
+    private static String optionId;
 
     /**
      * testing GET call
@@ -35,36 +35,42 @@ public class getAllQuestions {
                         "data.results[6].text", equalTo("Who do you usually travel with?"),
                         "data.results[7].text", equalTo("What is your usual purpose of visit?")).extract().jsonPath();
 
-        this.qsnId = jasonPath.get("data.results[3].uid");
-        this.optionId = jasonPath.get("data.results[3].surveyOptions[2].uid");
+        qsnId = jasonPath.get("data.results[5].uid");
+        optionId = jasonPath.get("data.results[5].surveyOptions[5].uid");
+
     }
 
-    /**testing POST call**/
+    /**
+     * testing POST call
+     **/
 
-//    @Test
-//    public void testUpdateCompanyCommand() throws IOException {
-//        HashMap<String, Object> requestBody1 = new HashMap<String, Object>();
-//        HashMap<String, Object> requestBody2 = new HashMap<String, Object>();
-//
-//        requestBody2.put("DTYPE", "UpdateCompanyData");
-//        requestBody2.put("companyName", globalConstants.getRandomName());
-//        requestBody2.put("contactEmail", globalConstants.getRandomEmail());
-//        requestBody2.put("contactPhone", globalConstants.getRandomContactPhoneNumber());
-//
-//        requestBody1.put("DTYPE", "UpdateCompanyCommand");
-//        requestBody1.put("companyId", companyID);
-//        requestBody1.put("updateCompanyData", requestBody2);
-//
-//        given().
-//                baseUri(globalConstants.getGlobalVariables("SURVEY-URL-STG")).
-//                proxy(globalConstants.getGlobalVariables("PROXY"), Integer.parseInt(globalConstants.getGlobalVariables("PORT"))).
-//                header("Accept", globalConstants.getGlobalHeaders().get("Accept")).
-//                header("content-type", globalConstants.getGlobalHeaders().get("content-type")).
-//                header("UserSecurityToken", globalConstants.getSessionHeaders().get("UserSecurityToken")).
-//                body(requestBody1).
-//                when().
-//                post("/legalparty/command/updateCompanyCommand").
-//                then().statusCode(201).body("DTYPE", equalTo("CompanyIdCommandResult"),
-//                        "actionUid", notNullValue(), "identifier", equalTo(companyID));
-//    }
+    // 1. Aa string (less than 10 lines) 2. Hashmap  (less than 20 lines + easy request body) 3.file format (other) - request body
+    @Test
+    public void testUpdateCompanyCommand() throws IOException {
+        String requestPayload = "{\n" +
+                "    \"userResponses\": [\n" +
+                "        \n" +
+                "        {\n" +
+                "            \"questionId\": \"" + qsnId + "\",\n" +
+                "            \"options\": [\n" +
+                "                {\n" +
+                "                \"uid\" : \"" + optionId + "\"\n" +
+                "                }\n" +
+                "\n" +
+                "            ]\n" +
+                "        }\n" +
+                "    ],\n" +
+                "    \"deviceToken\": \"TTT\"\n" +
+                "    \n" +
+                "}";
+
+        given().
+                baseUri(globalConstants.getGlobalVariables("SURVEY-URL-STG")).
+                header("x-api-key", globalConstants.getGlobalVariables("SURVEY-XAPI-KEY")).
+                body(requestPayload).
+                when().
+                post("/mobile/survey_questions/submit_user_responses").
+                then().statusCode(200).body("data.result.surveyUserResponses[0].questionId", equalTo(qsnId),
+                        "data.result.surveyUserResponses[0].options[0].uid", equalTo(optionId));
+    }
 }
