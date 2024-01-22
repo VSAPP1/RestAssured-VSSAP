@@ -34,7 +34,7 @@ public class globalConstants {
 
     public static String getRandomEmail() {
         Faker fakerNameTool = new Faker();
-        return fakerNameTool.artist().name() + "@keylane.com";
+        return fakerNameTool.artist().name() + "@gmail.com";
     }
 
     public static String getRandomContactPhoneNumber() {

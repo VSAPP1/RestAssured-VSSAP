@@ -10,20 +10,20 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'io.rest-assured:rest-assured:5.4.0'
-    implementation 'com.jayway.jsonpath:json-path:2.8.0'
-    implementation 'org.apache.maven.plugins:maven-surefire-plugin:3.1.2'
-    runtimeOnly 'org.aspectj:aspectjweaver:1.9.20.1'
-    testImplementation 'org.hamcrest:hamcrest:2.2'
-    implementation 'com.fasterxml.jackson.core:jackson-databind:2.16.0-rc1'
-    implementation 'com.github.javafaker:javafaker:1.0.2'
-    testImplementation("junit:junit:4.13.2")
-    testRuntimeOnly("org.junit.vintage:junit-vintage-engine:5.8.2")
+    testImplementation 'io.rest-assured:rest-assured:5.4.0' //restAssured dependency used for hit the api and get the response
+    implementation 'com.jayway.jsonpath:json-path:2.8.0' //to handle the json response
+    implementation 'org.apache.maven.plugins:maven-surefire-plugin:3.1.2'  //report generation
+    runtimeOnly 'org.aspectj:aspectjweaver:1.9.20.1' //to run restAssured test @test
+    testImplementation 'org.hamcrest:hamcrest:2.2'  //to write assertions (to verify assertions in json response)
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.16.0-rc1'  //in restAssured Post request body can be in 3 types - String/file call/hashmap(key value pair) - jackson converts to proper jason
+    implementation 'com.github.javafaker:javafaker:1.0.2'  //fake data generators random email/phome number
+    testImplementation("junit:junit:4.13.2") // to run rest Assured test
+    testRuntimeOnly("org.junit.vintage:junit-vintage-engine:5.8.2") // to run rest Assured test (same as 16/20/21)
 }
 
 test {
     useJUnitPlatform()
     testLogging {
-        events "passed", "skipped", "failed"
+        events "passed", "skipped", "failed" //when execeute testcase - shows status in log
     }
 }
